@@ -1,0 +1,10 @@
+<ul>
+{% for item in items_list %}
+    <li><a href="{{ item.get_absolute_url }}">{{ item.caption }}</li>
+    {% if item.choosen %}
+        {% with items_list=item.children template_name="menus/draw_menu.html"%}
+            {% include template_name %}
+        {% endwith %}
+    {% endif %}
+{% endfor %}
+</ul>
