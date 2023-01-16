@@ -82,10 +82,6 @@ DATABASES = {
         'PASSWORD': 'password',
         'HOST': 'localhost',
         'PORT': '5432'
-        # 'OPTIONS': {
-        #     #'service': 'pg_service',
-        #     'passfile': '.my_pgpass',
-        # },
     }
 }
 
